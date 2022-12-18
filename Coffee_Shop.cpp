@@ -30,7 +30,7 @@ menu[0].classic =1;
 menu[0].cf=1;
 menu[0].taste=1;
 menu[0].price=48000;
-menu[1].drname ="Luwak White Coffe";
+menu[1].drname ="Luwak White Coffee";
 menu[1].classic =1;
 menu[1].cf=1;
 menu[1].taste=1;
@@ -192,7 +192,7 @@ return 0;
 
 void pilihan (detail menu[]){
 char slcmain;
-cout<<"\nHai "<<name<<", Silahkan masukkan piihan kopi Anda"<<endl<<endl;
+cout<<"\nHai "<<name<<", Silahkan masukkan pilihan kopi Anda"<<endl<<endl;
 cout<<"1. Tampilkan Semua Menu"<<endl;
 cout<<"2. Rekomendasi kopi"<<endl;
 cout<<"3. Saya akan memasukkan kode secara manual\n\n"<<endl;
@@ -210,7 +210,7 @@ case '3':
     select();
     break;
 default:
-    cout<<"Input yang kamu masukkan salah"<<endl;
+    cout<<"Input yang anda masukkan salah"<<endl;
     break;
 }
 struk(menu);
@@ -356,7 +356,7 @@ basket* ubah[100];
 
 void final(int tmpsum){
     float diskon,final;
-    cout<<"Anda dikenakan ppn 8% dari total belaja"<<endl;
+    cout<<"Anda dikenakan ppn sebesar 8% dari total belanja"<<endl;
     if (tmpsum>100000){diskon=(0.1);cout<<"Anda mendapat diskon senilai 10%"<<endl;}else{diskon=0;}
     final=tmpsum+0.08*tmpsum-diskon*tmpsum;
     cout<<"Total yang Anda bayar adalah : "<<final<<endl;
